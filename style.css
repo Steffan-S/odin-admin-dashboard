@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: minmax(230px, 250px) 1fr;
+}
+
+
+/* Sidebar */
+
+.sidebar {
+    background: #363740;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 0 10px 0;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.navigation-main li,
+.navigation-footer li,
+.logo{
+    padding: 0 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar li {
+    height: 52px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    border-left: 3px solid transparent;
+}
+
+.sidebar li:hover {
+    background-color: #40414b;
+    border-left: 3px solid #1684FC;
+    color: #fff;
+}
+
+.sidebar li > i {
+    margin-right: 1.5rem;
+    width: 16px;
+}
+
+.sidebar li:hover > i {
+    color: #dde2ff;
+}
+
+.sidebar a {
+    color: #9496a5;
+    text-decoration: none;
+}
+

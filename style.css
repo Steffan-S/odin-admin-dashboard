@@ -140,6 +140,7 @@ h1 {
 
 .main-header-menu p {
     font-size: 14px;
+    font-weight: 600;
     margin-right: 16px;
     color: #252733;
 }
@@ -175,8 +176,14 @@ h1 {
     text-align: center;
     padding: 1.3rem 0;
     gap: 8px;
-    
     background: #fff;
+}
+
+.main-stats-overdue:hover,
+.main-stats-onhold:hover,
+.main-stats-unresolved:hover,
+.main-stats-open:hover {
+    box-shadow: inset 0 0 0 2px #3751ff;
 }
 
 .main-container > div > h3 {
@@ -184,11 +191,20 @@ h1 {
     color: #9fa2b4;
 }
 
+.main-container > div:hover > h3 {
+    color: #3751ff;
+}
+
 div.stats-h3 > p{
     font-size: 36px;
     color: rgb(37, 39, 51);
     font-weight: 700;
 }
+
+div.stats-h3:hover > p{
+    color: #3751ff;
+}
+
 
 
 /* main - trends */

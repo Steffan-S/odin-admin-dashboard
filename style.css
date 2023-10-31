@@ -33,9 +33,9 @@ a {
 .main-stats-overdue,
 .main-trends,
 .main-unresolved-tickets,
-.main-resolved-tickets {
+.main-tasks {
     background-color: white;
-    border: 2px solid #d2d4da9b;
+    border: 1.5px solid #d2d4da9b;
     border-radius: 6px;
 }
 
@@ -99,7 +99,7 @@ a {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: auto auto 1fr auto;
-    padding: 0 24px;
+    padding: 0 24px 24px;
     gap: 16px;
 }
 
@@ -127,7 +127,7 @@ h1 {
 .main-header-menu-icons {
     border-right: 1.5px solid #d2d4da67;
     padding-right: 8px;
-    margin-right: 24px;
+    margin-right: 16px;
     height: 30px;
     display: flex;
     align-items: center;
@@ -140,12 +140,14 @@ h1 {
 
 .main-header-menu p {
     font-size: 14px;
+    margin-right: 16px;
     color: #252733;
 }
 
 .main-header img {
     width: 42px;
     border-radius: 100px;
+    border: 1.5px solid #d2d4da9b;
 }
 
 
@@ -200,7 +202,7 @@ div.stats-h3 > p{
 .trends-graph {
     grid-column: 1/2;
     grid-row: 1/5;
-    border-right: 2px solid #d2d4da9b;
+    border-right: 1.5px solid #d2d4da9b;
     background: url(images/svg-chart.svg) center no-repeat;
     background-size: cover;
 }
@@ -213,7 +215,7 @@ div.stats-h3 > p{
 }
 
 .trends-stats:nth-last-child(n + 2) {
-    border-bottom: 2px solid #d2d4da9b;
+    border-bottom: 1.5px solid #d2d4da9b;
 }
 
 .trends-stats {
@@ -280,11 +282,15 @@ div.stats-h3 > p{
     display: grid;
     grid-template-columns: 1fr auto;
     padding: 1rem 1.3rem;
-    border-top: 2px solid #d2d4da9b;
+    border-top: 1.5px solid #d2d4da9b;
+    max-height: 50px;
+    align-items: center;
 }
 
 .ticket p {
-    font-size: 16px;
+    font-size: 14px;
+    color: rgb(37, 39, 51);
+    font-weight: 600;
 }
 
 .ticket:nth-last-child(n + 4) {
@@ -298,10 +304,46 @@ div.stats-h3 > p{
 }
 
 
-/* main - resolved tickets */
+/* main - tasks */
 
-.main-resolved-tickets {
+.main-tasks {
     grid-column: 5/9;
+}
+
+.main-tasks > .ticket {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 0.72rem 1.3rem;
+}
+
+.ticket input {
+    margin-right: 1rem;
+}
+
+.ticket > .task-prio-urgent,
+.ticket > .task-prio-new,
+.ticket > .task-prio-default,
+.ticket > .task-prio-assigned {
+    background: rgb(254, 196, 0);
+    font-size: 11px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 6px 13px;
+}
+
+
+.ticket > .task-prio-new {
+    background: rgb(41, 204, 151);
+}
+
+.ticket > .task-prio-default {
+    background: rgb(240, 241, 247);
+    color: rgb(159, 162, 180);
+}
+
+.ticket > .task-prio-assigned {
+    background: rgb(55, 81, 255);
 }
 
 

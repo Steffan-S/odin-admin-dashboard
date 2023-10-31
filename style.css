@@ -17,11 +17,14 @@
 
 
 /* default styling */
-
 h2 {
     font-size: 20px;
     color: #000;
     font-weight: 700;
+}
+
+a {
+    text-decoration: none;
 }
 
 .main-stats-open,
@@ -38,7 +41,6 @@ h2 {
 
 
 /* Sidebar */
-
 .sidebar {
     background: #363740;
     height: 100vh;
@@ -90,12 +92,9 @@ h2 {
 
 .sidebar a {
     color: #9496a5;
-    text-decoration: none;
 }
 
 /* Main container */
-
-
 .main-container {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -106,7 +105,6 @@ h2 {
 
 
 /* main - header */
-
 .main-header {
     grid-column: 1/9;
     display: grid;
@@ -184,7 +182,7 @@ h1 {
     color: #9fa2b4;
 }
 
-.main-container > div > p {
+div.stats-h3 > p{
     font-size: 36px;
     color: rgb(37, 39, 51);
     font-weight: 700;
@@ -192,7 +190,6 @@ h1 {
 
 
 /* main - trends */
-
 .main-trends {
     grid-column: 1/9;
     display: grid;
@@ -231,12 +228,14 @@ h1 {
     font-size: 16px;
     color: #9fa2b4;
     font-weight: 600;
+    padding-top: 1.3rem;
 }
 
 .trends-stats p {
     font-size: 24px;
     color: rgb(37, 39, 51);
     font-weight: 700;
+    margin-bottom: 1.3rem;
 }
 
 
@@ -244,6 +243,58 @@ h1 {
 
 .main-unresolved-tickets {
     grid-column: 1/5;
+}
+
+.ticket-title {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 1.3rem 1.3rem 0.4rem;
+}
+
+.ticket-title a {
+    color: #3751ff;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.ticket-title a:hover {
+    scale: 1.1;
+}
+
+
+.small-title {
+    padding: 0 1.3rem;
+}
+
+.small-title p,
+.small-title span {
+    font-size: 12px;
+}
+
+.small-title span {
+    opacity: 0.5;
+}
+
+.ticket {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 1rem 1.3rem;
+    border-top: 2px solid #d2d4da9b;
+}
+
+.ticket p {
+    font-size: 16px;
+}
+
+.ticket:nth-last-child(n + 4) {
+    border: none;
+    margin-top: 1.5rem;
+}
+
+.feature-number {
+    opacity: 0.4;
+    font-weight: 600;
 }
 
 

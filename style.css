@@ -173,6 +173,50 @@ h1 {
 
 .main-trends {
     grid-column: 1/9;
+    border: 2px solid #d2d4da9b;
+    border-radius: 6px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 5fr 3fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.trends-graph {
+    grid-column: 1/2;
+    grid-row: 1/5;
+    border-right: 2px solid #d2d4da9b;
+    background: url(images/svg-chart.svg) center no-repeat;
+    background-size: cover;
+}
+
+.trends-graph h2 {
+    position: relative;
+    top: 1.3rem;
+    left: 1.3rem;
+}
+
+.trends-stats:nth-last-child(n + 2) {
+    border-bottom: 2px solid #d2d4da9b;
+}
+
+.trends-stats {
+    display: grid;
+    grid-template-rows: auto auto;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.trends-stats h3 {
+    font-size: 15px;
+    color: #9fa2b4;
+    font-weight: 600;
+}
+
+.trends-stats p {
+    font-size: 30px;
+    color: rgb(37, 39, 51);
+    font-weight: 700;
 }
 
 

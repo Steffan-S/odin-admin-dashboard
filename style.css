@@ -7,6 +7,8 @@
     font-size: 16px;
 }
 
+/* Main */
+
 .container {
     display: grid;
     grid-template-columns: minmax(230px, 250px) 1fr;
@@ -14,15 +16,39 @@
 }
 
 
+/* default styling */
+
+h2 {
+    font-size: 20px;
+    color: #000;
+    font-weight: 700;
+}
+
+.main-stats-open,
+.main-stats-unresolved,
+.main-stats-onhold,
+.main-stats-overdue,
+.main-trends,
+.main-unresolved-tickets,
+.main-resolved-tickets {
+    background-color: white;
+    border: 2px solid #d2d4da9b;
+    border-radius: 6px;
+}
+
+
 /* Sidebar */
 
 .sidebar {
     background: #363740;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 30px 0 10px 0;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 .logo {
@@ -78,9 +104,6 @@
     gap: 16px;
 }
 
-.main-container > div {
-    background-color: white;
-}
 
 /* main - header */
 
@@ -100,7 +123,7 @@
 }
 
 h1 {
-    font-size: 21px;
+    font-size: 23px;
 }
 
 .main-header-menu-icons {
@@ -152,8 +175,7 @@ h1 {
     text-align: center;
     padding: 1.3rem 0;
     gap: 8px;
-    border: 2px solid #d2d4da9b;
-    border-radius: 6px;
+    
     background: #fff;
 }
 
@@ -173,9 +195,6 @@ h1 {
 
 .main-trends {
     grid-column: 1/9;
-    border: 2px solid #d2d4da9b;
-    border-radius: 6px;
-    background: #fff;
     display: grid;
     grid-template-columns: 5fr 3fr;
     grid-template-rows: repeat(4, 1fr);
@@ -193,6 +212,7 @@ h1 {
     position: relative;
     top: 1.3rem;
     left: 1.3rem;
+    font-size: 20px;
 }
 
 .trends-stats:nth-last-child(n + 2) {
@@ -208,13 +228,13 @@ h1 {
 }
 
 .trends-stats h3 {
-    font-size: 15px;
+    font-size: 16px;
     color: #9fa2b4;
     font-weight: 600;
 }
 
 .trends-stats p {
-    font-size: 30px;
+    font-size: 24px;
     color: rgb(37, 39, 51);
     font-weight: 700;
 }

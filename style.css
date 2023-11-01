@@ -135,6 +135,11 @@ h1 {
     font-size: 23px;
 }
 
+.main-header div h1 span,
+.main-header div h1 a {
+    font-size: 12px;
+}
+
 .main-header-menu-icons {
     border-right: 1px solid #d2d4da67;
     padding-right: 8px;

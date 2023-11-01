@@ -334,7 +334,11 @@ div.stats-h3:hover > p{
 
 .ticket input {
     margin-right: 1rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
 }
+
 
 .ticket > .task-prio-urgent,
 .ticket > .task-prio-new,
@@ -347,7 +351,6 @@ div.stats-h3:hover > p{
     border-radius: 8px;
     padding: 6px 13px;
 }
-
 
 .ticket > .task-prio-new {
     background: rgb(41, 204, 151);
@@ -363,3 +366,51 @@ div.stats-h3:hover > p{
 }
 
 
+/* Responsive design */
+
+@media only screen and (max-width: 960px) {
+    .main-unresolved-tickets {
+        grid-column: 1/9;
+    }
+
+    .main-tasks {
+        grid-column: 1/9;
+    }
+}
+
+
+@media only screen and (max-width: 780px) {
+    .main-container {
+        grid-template-rows: auto auto 1fr auto;
+    }
+
+    .main-stats-open {
+        grid-column: 1/5;
+    }
+    .main-stats-unresolved {
+        grid-column: 5/9;
+    }
+    .main-stats-onhold {
+        grid-column: 1/5;
+    }
+    .main-stats-overdue {
+        grid-column: 5/9;
+    }
+
+    .main-trends {
+        grid-column: 1/9;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 240px repeat(4, auto);
+    }
+
+    .trends-graph {
+        grid-column: 1/2;
+        border-right: none;
+    }
+
+    .trends-stats:nth-last-child(n + 1) {
+        border-top: 1.5px solid #E4E5E8;
+        margin-bottom: -1.5px;
+    }
+}

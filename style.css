@@ -35,7 +35,7 @@ a {
 .main-unresolved-tickets,
 .main-tasks {
     background-color: white;
-    border: 1.5px solid #d2d4da9b;
+    border: 1px solid #d2d4da9b;
     border-radius: 6px;
 }
 
@@ -55,6 +55,11 @@ a {
 
 .logo {
     margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    scale: 1.05;
 }
 
 .navigation-main li,
@@ -73,6 +78,7 @@ a {
     grid-template-columns: auto 1fr;
     align-items: center;
     border-left: 3px solid transparent;
+    transition: all 0.15s ease;
 }
 
 .sidebar li:hover {
@@ -125,17 +131,23 @@ h1 {
 }
 
 .main-header-menu-icons {
-    border-right: 1.5px solid #d2d4da67;
+    border-right: 1px solid #d2d4da67;
     padding-right: 8px;
     margin-right: 16px;
     height: 30px;
     display: flex;
     align-items: center;
-    color: #c5c7cD;
+    
 }
 
 .main-header-menu-icons i {
     margin-right: 16px;
+    color: #c5c7cD;
+    transition: all 0.3s ease;
+}
+
+.main-header-menu-icons i:hover {
+    color: rgb(37, 39, 51);
 }
 
 .main-header-menu p {
@@ -148,9 +160,16 @@ h1 {
 .main-header img {
     width: 42px;
     border-radius: 100px;
-    border: 1.5px solid #d2d4da9b;
+    border: 1px solid #d2d4da9b;
+    transition: all 0.3s ease;
 }
 
+.main-header img:hover {
+    scale: 1.05;
+    border: 1px solid #3751FF;
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(55, 81, 255, 0.14);
+    box-shadow: 0px 0px 15px 5px rgba(55, 81, 255, 0.14);
+}
 
 /* main - stats */
 
@@ -218,7 +237,7 @@ div.stats-h3:hover > p{
 .trends-graph {
     grid-column: 1/2;
     grid-row: 1/5;
-    border-right: 1.5px solid #d2d4da9b;
+    border-right: 1px solid #d2d4da9b;
     background: url(images/svg-chart.svg) center no-repeat;
     background-size: cover;
 }
@@ -231,7 +250,7 @@ div.stats-h3:hover > p{
 }
 
 .trends-stats:nth-last-child(n + 2) {
-    border-bottom: 1.5px solid #d2d4da9b;
+    border-bottom: 1px solid #d2d4da9b;
 }
 
 .trends-stats {
@@ -298,7 +317,7 @@ div.stats-h3:hover > p{
     display: grid;
     grid-template-columns: 1fr auto;
     padding: 1rem 1.3rem;
-    border-top: 1.5px solid #d2d4da9b;
+    border-top: 1px solid #d2d4da9b;
     max-height: 50px;
     align-items: center;
 }
@@ -410,7 +429,7 @@ div.stats-h3:hover > p{
     }
 
     .trends-stats:nth-last-child(n + 1) {
-        border-top: 1.5px solid #E4E5E8;
-        margin-bottom: -1.5px;
+        border-top: 1px solid #E4E5E8;
+        margin-bottom: -1px;
     }
 }
